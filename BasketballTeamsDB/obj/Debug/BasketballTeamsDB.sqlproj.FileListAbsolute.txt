@@ -1,0 +1,5 @@
+C:\Users\Ryordan Panter\source\repos\Dip_2019_Challenge_Semester2\BasketballTeamsDB\bin\Debug\BasketballTeamsDB.dacpac
+C:\Users\Ryordan Panter\source\repos\Dip_2019_Challenge_Semester2\BasketballTeamsDB\bin\Debug\BasketballTeamsDB.dll
+C:\Users\Ryordan Panter\source\repos\Dip_2019_Challenge_Semester2\BasketballTeamsDB\bin\Debug\BasketballTeamsDB.pdb
+C:\Users\Ryordan Panter\source\repos\Dip_2019_Challenge_Semester2\BasketballTeamsDB\obj\Debug\BasketballTeamsDB.dll
+C:\Users\Ryordan Panter\source\repos\Dip_2019_Challenge_Semester2\BasketballTeamsDB\obj\Debug\BasketballTeamsDB.pdb

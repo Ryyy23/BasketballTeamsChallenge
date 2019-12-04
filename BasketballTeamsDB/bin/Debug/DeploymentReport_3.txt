@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Game]
+       [dbo].[Member]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[Game] (Table)
+       [dbo].[Member] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Game_Member] (Foreign Key)
+     Create
+       [dbo].[FK_Game_Member] (Foreign Key)

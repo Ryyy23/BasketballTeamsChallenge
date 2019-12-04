@@ -1,0 +1,33 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Member]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Member].[Authorised] is being dropped, data loss could occur.
+       The column [dbo].[Member].[Password] is being dropped, data loss could occur.
+       The column [dbo].[Member].[UserName] is being dropped, data loss could occur.
+       The column [dbo].[Member].[Name] on table [dbo].[Member] must be added, but the column has no default value and does not
+         allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add
+         a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+
+** User actions
+     Drop
+       [dbo].[CHK_Authorised] (Check Constraint)
+     Table rebuild
+       [dbo].[Member] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Game_Member] (Foreign Key)
+     Create
+       [dbo].[FK_Game_Member] (Foreign Key)
+
+The column [dbo].[Member].[Authorised] is being dropped, data loss could occur.
+The column [dbo].[Member].[Password] is being dropped, data loss could occur.
+The column [dbo].[Member].[UserName] is being dropped, data loss could occur.
+The column [dbo].[Member].[Name] on table [dbo].[Member] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+
