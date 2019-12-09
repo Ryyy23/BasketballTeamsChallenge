@@ -14,6 +14,8 @@ import Register from '@/components/Register';
 import Admin from '@/components/Admin';
 import TeamManager from '@/components/TeamManager';
 import TeamMember from '@/components/TeamMember';
+import PastGames from '@/components/PastGames';
+import TotalFees from '@/components/TotalFees';
 
 /*
 Vue.use(Auth, {
@@ -88,6 +90,22 @@ let router = new Router({
       component: TeamMember,
       meta: {
         auth: true
+      }
+    },
+    {
+      path: '/teammember/pastgames',
+      name: 'PastGames',
+      component: PastGames,
+      meta: {
+        guest: true
+      }
+    },
+    {
+      path: '/teammember/totalfees',
+      name: 'TotalFees',
+      component: TotalFees,
+      meta: {
+        guest: true
       }
     },
 

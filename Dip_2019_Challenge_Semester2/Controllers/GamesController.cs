@@ -24,6 +24,7 @@ namespace Dip_2019_Challenge_Semester2.Controllers
             
             return db.Games;
         }
+        
         //GET: api/Games/Sorted
         [ResponseType(typeof(Game))]
         [Route("api/Games/Sorted")]
@@ -42,6 +43,35 @@ namespace Dip_2019_Challenge_Semester2.Controllers
             return Ok(games);
         }
 
+        //GET: api/Games/WhoPayed
+        [ResponseType(typeof(Game))]
+        [Route("api/Games/WhoPayed")]
+        public IHttpActionResult GetGamePayed()
+        {
+
+            DateTime Now = DateTime.Today;
+
+            List<Game> games = new List<Game>();
+            foreach (Game gamepayed in db.Games)
+            {
+                if (gamepayed.Date <= Now)
+                {
+                    games.Add(gamepayed);
+                }
+            }
+            return Ok(games);
+        }
+
+        //GET: api/Games/WhoPayedTotal
+        [ResponseType(typeof(Game))]
+        [Route("api/Games/WhoPayedTotal")]
+        public IHttpActionResult GetGamePayedTotal()
+        {
+            var result = db.Games.GroupBy(x => x.MemberID).Select(g => new {
+            MemberID = g.Key,
+            Total = g.Sum(x => x.Amount)});
+            return Ok(result);
+        }
 
 
         // GET: api/Games/5

@@ -24,6 +24,12 @@ export default {
   getAll() {
     return this.execute('get', '/sorted');
   },
+  getAllPast() {
+    return this.execute('get', '/WhoPayed');
+  },
+  getAllTotalPaid() {
+    return this.execute('get', '/WhoPayedTotal');
+  },
   create(data) {
     return this.execute('post', '', data);
   },
